@@ -8,15 +8,34 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showingPopover = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
+        VStack(alignment: .leading) {
+            
+            Image(systemName: "network")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
+            
             Text("Hello, world!")
-            Text("Test app")
+                .font(
+                    .largeTitle
+                    .bold()
+                )
+                .padding(.top, 1)
+                .padding(.bottom)
+            
+            
+            Text("First SwiftUI App")
+                .padding(.bottom)
+            
+            Image(systemName: "apple.logo")
+                .imageScale(.large)
+                .padding(.top)
+
         }
         .padding()
+        
     }
 }
 
